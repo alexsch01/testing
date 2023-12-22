@@ -55,8 +55,8 @@ async function launchBrowser() {
         '--enable-precise-memory-info',
         '--disable-gpu',
         '--no-sandbox',
-        // '--proxy-server=http://localhost:34361',
-        // '--proxy-bypass-list=<-loopback>',
+        '--proxy-server=http://localhost:' + process.argv[0],
+        '--proxy-bypass-list=<-loopback>',
         '--remote-debugging-port=9222',
         '--remote-debugging-address=127.0.0.1',
     ]
@@ -72,7 +72,7 @@ async function main() {
     let client
     try {
         client = await CDP()
-        await client.Page.navigate({url: 'http://httpforever.com'})
+        await client.Page.navigate({url: 'http://httpforever.com/__/#/specs/runner?file=cypress/e2e/spec.cy.js'})
     } catch (err) {
         console.error(err)
     } finally {
