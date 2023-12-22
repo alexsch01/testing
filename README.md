@@ -4,7 +4,7 @@ after doing `npm i` ...
 
 in one tab
 
-`npx cypress run --no-exit`
+`npx cypress run --quiet --no-exit`
 
 in another tab
 
