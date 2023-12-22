@@ -1,11 +1,13 @@
-after doing `npm i` ...
+```
+git clone https://github.com/alexsch01/testing
+cd testing
+npm i
+```
 
----
-
-in one tab
+in the 1st tab
 
 `npx cypress run --quiet --no-exit 2> /dev/null`
 
-in another tab
+in the 2nd tab
 
-`node launchBrowser.js PORT` where PORT is the num
+`node launchBrowser.js PORT` where PORT is from the 1st tab
