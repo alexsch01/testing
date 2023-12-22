@@ -3,6 +3,8 @@ const cp = require('child_process')
 
 const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
 
+if(process.argv.length < 2) throw Error("Need port")
+
 async function launchBrowser() {
     const args = [
         'about:blank',
@@ -55,7 +57,7 @@ async function launchBrowser() {
         '--enable-precise-memory-info',
         '--disable-gpu',
         '--no-sandbox',
-        '--proxy-server=http://localhost:' + process.argv[0],
+        '--proxy-server=http://localhost:' + process.argv[2],
         '--proxy-bypass-list=<-loopback>',
         '--remote-debugging-port=9222',
         '--remote-debugging-address=127.0.0.1',
