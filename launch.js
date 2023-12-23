@@ -60,7 +60,7 @@ function launchBrowser() {
         '--remote-debugging-port=9222',
         '--remote-debugging-address=127.0.0.1',
         '--user-data-dir=' + __dirname + "/chromium-data",
-        '--disk-cache-dir=' + __dirname + "/chromium-data/CypressCache",
+        '--disk-cache-dir=' + __dirname + "/chromium-data/DiskCache",
     ]
 
     cp.spawn('/usr/bin/chromium', args)
