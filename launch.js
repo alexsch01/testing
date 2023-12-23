@@ -5,7 +5,7 @@ const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
 
 if(process.argv.length < 2) throw Error("Need port")
 
-async function launchBrowser() {
+function launchBrowser() {
     const args = [
         'about:blank',
         '--test-type',
