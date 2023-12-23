@@ -59,6 +59,8 @@ function launchBrowser() {
         '--proxy-bypass-list=<-loopback>',
         '--remote-debugging-port=9222',
         '--remote-debugging-address=127.0.0.1',
+        '--user-data-dir=' + __dirname + "/chromium-data",
+        '--disk-cache-dir=' + __dirname + "/chromium-data/CypressCache",
     ]
 
     cp.spawn('/usr/bin/chromium', args)
