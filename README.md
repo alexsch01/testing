@@ -1,6 +1,6 @@
+After installing NodeJS and Chromium....
+
 ```
-sudo apt update
-sudo apt install chromium -y
 git clone https://github.com/alexsch01/testing
 cd testing
 npm i
