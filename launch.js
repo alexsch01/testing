@@ -8,6 +8,7 @@ const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
 function launchBrowser() {
     const args = [
         '--ignore-certificate-errors',
+        '--no-first-run',
         '--proxy-server=http://localhost:' + process.argv[2],
         '--remote-debugging-port=9222',
         '--user-data-dir=' + __dirname + '/chromium-data',
