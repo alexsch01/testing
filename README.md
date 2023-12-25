@@ -27,9 +27,9 @@ node launch.js **PORT** # where **PORT** is from the 1st tab
 ---
 
 **Chrome for Testing 114.0.5696.0** - redirects to HTTPS, which is incorrect behavior
-![image](https://github.com/alexsch01/testing/assets/5721147/cccd298d-e0e4-4a79-8eea-7a77f04e10c2)
+![Screenshot 2023-12-25 3 35 43 PM](https://github.com/alexsch01/testing/assets/5721147/f252e86c-1f35-4552-b90d-88c67369dc7a)
 
 ---
 
 **Chrome for Testing 113.0.5672.63**
-![image](https://github.com/alexsch01/testing/assets/5721147/e3c3c57f-ec2a-45e7-92cc-cd2ebcb57043)
+![image](https://github.com/alexsch01/testing/assets/5721147/42344546-2a09-4c7d-9715-c7f9acf40d1a)
