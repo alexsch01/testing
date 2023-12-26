@@ -23,7 +23,7 @@ git clone https://github.com/alexsch01/testing
 cd testing
 node launch.js **CHROME** **PORT**
 
-# where **CHROME** is the absolute path to the chrome binary, and **PORT** is from the 1st tab
+# where **CHROME** is the path to the chrome binary, and **PORT** is from the 1st tab
 ```
 
 ---
