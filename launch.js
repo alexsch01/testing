@@ -7,8 +7,8 @@ const args = [
     'http://httpforever.com',
     '--ignore-certificate-errors',
     '--no-first-run',
-    '--proxy-server=http://localhost:' + process.argv[2],
+    '--proxy-server=http://localhost:' + process.argv[3],
     '--user-data-dir=' + __dirname + '/chromium-data',
     '--disk-cache-dir=' + __dirname + '/chromium-data/DiskCache',
 ]
-cp.spawn('/usr/bin/chromium', args)
+cp.spawn('/usr/bin/chromium', process.argv[2])
