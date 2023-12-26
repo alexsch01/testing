@@ -11,4 +11,4 @@ const args = [
     '--user-data-dir=' + __dirname + '/chromium-data',
     '--disk-cache-dir=' + __dirname + '/chromium-data/DiskCache',
 ]
-cp.spawn('/usr/bin/chromium', process.argv[2])
+cp.spawn(process.argv[2], args)
