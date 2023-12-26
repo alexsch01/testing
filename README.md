@@ -1,7 +1,7 @@
 https://github.com/cypress-io/cypress/issues/25891
 ---
 
-After installing Node.js and Chromium....
+After installing Node.js and Chromium or Google Chrome....
 
 ---
 
@@ -21,7 +21,9 @@ in the 2nd tab
 cd $HOME
 git clone https://github.com/alexsch01/testing
 cd testing
-node launch.js **PORT** # where **PORT** is from the 1st tab
+node launch.js **CHROME** **PORT**
+
+# where **CHROME** is the path to the chrome binary, and **PORT** is from the 1st tab
 ```
 
 ---
