@@ -4,7 +4,7 @@ const fs = require('fs')
 fs.rmSync(__dirname + '/chromium-data', { recursive: true, force: true })
 
 const args = [
-    'http://httpforever.com/__/#/specs/runner?file=cypress/e2e/spec.cy.js',
+    'http://httpforever.com',
     '--ignore-certificate-errors',
     '--no-first-run',
     '--proxy-server=http://localhost:' + process.argv[2],
