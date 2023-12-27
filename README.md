@@ -9,6 +9,7 @@ in the 1st tab
 
 ```
 cd $HOME
+rm -rf CypressProxy
 git clone https://github.com/alexsch01/CypressProxy
 cd CypressProxy
 npm install
@@ -19,6 +20,7 @@ in the 2nd tab
 
 ```
 cd $HOME
+rm -rf testing
 git clone https://github.com/alexsch01/testing
 cd testing
 node launch.js **CHROME** **PORT**
